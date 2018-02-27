@@ -1,0 +1,13 @@
+AppBundle\Entity\Category:
+    exclusion_policy: none
+    properties:
+        name:
+            groups: ['category', 'fork']
+        lowerFork:
+            groups: ['category', 'fork']
+        upperFork:
+            groups: ['category', 'fork']
+        gender:
+            groups: ['category', 'fork']
+        forks:
+            groups: ['category']

@@ -1,0 +1,9 @@
+AppBundle\Entity\Step:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['step', 'course']
+        name:
+            groups: ['step', 'course']
+        course:
+            groups: ['step']

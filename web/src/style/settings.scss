@@ -1,0 +1,93 @@
+//Definition
+$f-c:#123456;
+$s-c:#ffffff;
+$t-c:#24b47e;
+$fo-c:#006699;
+$err-c:rgb(247, 175, 175);
+$radius-default:1rem;
+$grey:rgb(184, 184, 184);
+$grey-light:rgb(228, 228, 228);
+//Base
+$component-padding:4rem;
+$component-padding-h:5rem;
+$component-padding-w:4rem;
+$body-bg:rgb(214, 214, 214);
+$topbar-h:9vh;
+$home-h:80vh;
+$scrollbar-bg:$f-c;
+$scrollbar-outline-c:$s-c;
+$cta-c:$t-c; //Home
+$home-brand-bg:transparentize($s-c, 0.2);
+$navigation-c:$f-c;
+$navigation-bg:transparentize($s-c, 0);
+$navigation-brand-c:transparentize($f-c, 0);
+$brand-c:$s-c;
+$navigation-brand-title-c:$f-c;
+//Description
+$description-bg:transparentize($f-c, 0);
+$description-c:$s-c;
+$description-title-c:$s-c;
+//Prosbar
+$prosbar-c:$f-c;
+$prosbar-bg:$s-c;
+$prosbar-border-c:$t-c;
+//Videocall
+$main-feature-bg:$s-c;
+$main-feature-c:$f-c;
+$main-feature-title-c:$t-c;
+//Features
+$features-bg:$grey-light;
+$features-c:$f-c;
+$features-selection-active-c:$f-c;
+$features-selection-bg:rgb(255, 255, 255);
+$features-title-c:$f-c;
+$features-slogan-c:$grey;
+$features-client-c:$t-c;
+$features-provider-c:$fo-c;
+$features-content-bg:$s-c;
+$features-border-c:rgb(192, 192, 192);
+//Pricing
+$pricing-bg:$s-c;
+$pricing-client-c: $t-c;
+$pricing-provider-c:$fo-c;
+//Step
+$steps-bg:$f-c;
+$step-client-c: $t-c;
+$step-provider-c: $fo-c;
+@font-face {
+    font-family: 'Arciform';
+    src: url('/fonts/Arciform.otf');
+    font-weight: 300;
+}
+
+$title-s:2.2rem;
+$title-d:1.5rem;
+$textbox-w:50rem;
+//Screen size
+$retina-size:1920px;
+$large-size:1024px;
+$medium-size:768px;
+$small-size:576px;
+.opacityEnter {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.opacityLeave {
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+//Font Size
+$most-important-fs:2.5em;
+$important-fs:2em;
+$sub-important-fs:1.5em;
+$base-fs:1.25em;
+$small-fs:1em;
+///
+$nav-brand-fs-l:2.5rem;
+$nav-link-fs-l:1.2rem;
+$nav-hamburger-fs-l:1.5rem;
+$home-fs-l:100%;
+//// Imports
+@import "./shared";

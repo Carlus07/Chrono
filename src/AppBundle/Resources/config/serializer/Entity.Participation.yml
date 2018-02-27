@@ -1,0 +1,15 @@
+AppBundle\Entity\Participation:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['participation', 'course', 'user', 'category', 'chrono']
+        dossard:
+            groups: ['participation', 'course', 'user', 'category', 'chrono']
+        user:
+            groups: ['participation']
+        category:
+            groups: ['participation']
+        chrono:
+            groups: ['participation']
+        course:
+            groups: ['participation']

@@ -1,0 +1,53 @@
+#Category Validation
+AppBundle\Entity\Category:
+    properties:
+        name:
+            - Type: string
+        lowerFork:
+            - Type:
+                type: numeric
+                message: 'validation.test'
+
+#User Validation
+AppBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: mail
+    properties:
+        firstName:
+            - NotBlank: ~
+            - Type: string
+        name:
+            - NotBlank: ~
+            - Type: string
+        gender:
+            - NotBlank: ~
+        birthDate:
+            - Date: ~
+        role:
+            - NotBlank: ~
+        mail:
+            - NotBlank: ~
+            - Email: ~
+        plainPassword:
+            - NotBlank: { groups: [New, FullUpdate] }
+            - Type: string
+            - Length:
+                min: 8
+                max: 50
+
+#Credential Validation
+AppBundle\Entity\Credential:
+    properties:
+        login:
+            - NotBlank: ~
+            - Email: ~
+        password:
+            - NotBlank: ~
+            - Type: string
+
+#Step Validation
+AppBundle\Entity\Step:
+    properties:
+        name:
+            - NotBlank: ~
+            - Type: string

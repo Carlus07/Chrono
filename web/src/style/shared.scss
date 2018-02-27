@@ -1,0 +1,25 @@
+.section-title {
+    align-self: center;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    font-size: $most-important-fs;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    line-height: 1.2em;
+    color: $f-c;
+}
+
+.cta-btn {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    font-size: $base-fs;
+    color: $s-c;
+    background-color: $cta-c;
+    border-radius: $radius-default;
+    .fa {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+}

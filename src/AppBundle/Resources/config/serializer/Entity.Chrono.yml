@@ -1,0 +1,11 @@
+AppBundle\Entity\Chorno:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['chrono', 'participation', 'special-time']
+        start:
+            groups: ['chrono', 'participation', 'special-time']
+        finish:
+            groups: ['chrono','participation', 'special-time']
+        participation:
+            groups: ['chrono']

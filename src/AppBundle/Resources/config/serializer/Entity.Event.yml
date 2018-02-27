@@ -1,0 +1,15 @@
+AppBundle\Entity\Event:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['course', 'event']
+        name:
+            groups: ['course', 'event']
+        description:
+            groups: ['course','event']
+        date:
+            groups: ['course', 'event']
+        category:
+            groups: ['course', 'event']
+        courses:
+            groups: ['event']

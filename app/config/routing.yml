@@ -1,0 +1,33 @@
+#app:
+#    resource: "@AppBundle/Controller/"
+#    type:     annotation
+
+courses:
+    type: rest
+    prefix:   /api
+    resource: AppBundle\Controller\CourseController
+
+events:
+    type: rest
+    prefix:    /api
+    resource: AppBundle\Controller\EventController
+
+categories:
+    type: rest
+    prefix:    /api
+    resource: AppBundle\Controller\CategoryController
+
+users:
+    type: rest
+    prefix:    /api
+    resource: AppBundle\Controller\UserController
+
+auth-tokens:
+    type:     rest
+    resource: AppBundle\Controller\AuthTokenController
+
+fallback:
+    path: /{url}
+    defaults: { _controller: AppBundle:Default:index, url: null }
+    requirements:
+        url: .*

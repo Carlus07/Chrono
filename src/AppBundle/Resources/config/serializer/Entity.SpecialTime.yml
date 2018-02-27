@@ -1,0 +1,9 @@
+AppBundle\Entity\SpecialTime:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['special-time', 'chrono']
+        stepTime:
+            groups: ['special-time', 'chrono']
+        chrono:
+            groups: ['special-time']

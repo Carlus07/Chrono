@@ -1,0 +1,19 @@
+AppBundle\Entity\Course:
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['course', 'event', 'step']
+        name:
+            groups: ['course', 'event', 'step']
+        type:
+            groups: ['course','event', 'step']
+        start:
+            groups: ['course', 'event', 'step']
+        time:
+            groups: ['course', 'event', 'step']
+        distance:
+            groups: ['course', 'event', 'step']
+        event:
+            groups: ['course']
+        steps:
+            groups: ['course']

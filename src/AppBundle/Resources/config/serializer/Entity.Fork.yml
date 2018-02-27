@@ -1,0 +1,11 @@
+AppBundle\Entity\Fork:
+    exclusion_policy: none
+    properties:
+        lowerFork:
+            groups: ['fork', 'category', 'course']
+        upperFork:
+            groups: ['fork', 'category', 'course']
+        course:
+            groups: ['fork']
+        categories:
+            groups: ['fork']
